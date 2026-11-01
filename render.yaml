@@ -1,0 +1,13 @@
+services:
+  - type: worker
+    name: arceus-xd
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PREFIX
+        value: .
+      - key: MODE
+        value: public
